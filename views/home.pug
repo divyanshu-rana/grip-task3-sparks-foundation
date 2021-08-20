@@ -1,0 +1,173 @@
+extends base
+
+block content
+    section#home.home
+      #carousel.carousel.slide(data-ride='carousel')
+        ol.carousel-indicators
+          li.active(data-target='#carousel' data-slide-to='0')
+          li(data-target='#carousel' data-slide-to='1')
+          li(data-target='#carousel' data-slide-to='2')
+          li(data-target='#carousel' data-slide-to='3')
+        .carousel-inner
+          .carousel-item.active
+            img.d-block.w-100.home_bg(src='./img/BG-images/education.jpg' alt='#')
+            .overlay_home
+            .container.home-content
+              .quote
+                p Education is a Right
+                p Not a Privilege
+              .container.donate
+                h3 Give Children The Childhood They Deserve
+                a(href='/donate') DONATE
+          .carousel-item
+            img.d-block.w-100.home_bg(src='./img/BG-images/food.png' alt='#')
+            .overlay_home
+            .container.home-content
+              .quote
+                p If You Can't Feed 100
+                p Then Just Feed
+                p One
+              .container.donate
+                h3 Give Children The Childhood They Deserve
+                a(href='/donate') DONATE
+          .carousel-item
+            img.d-block.w-100.home_bg(src='./img/BG-images/medical.png' alt='#')
+            .overlay_home
+            .container.home-content
+              .quote
+                p Everyone Should
+                p Have Chance To Get
+                p Cured
+              .container.donate
+                h3 Give Children The Childhood They Deserve
+                a(href='/donate') DONATE
+          .carousel-item
+            img.d-block.w-100.home_bg(src='./img/BG-images/shelter.png' alt='#')
+            .overlay_home
+            .container.home-content
+              .quote
+                p Everyone Rich or Poor,
+                p Deserves Shelter
+              .container.donate
+                h3 Give Children The Childhood They Deserve
+                a(href='/donate') DONATE
+        a.carousel-control-prev(href='#carousel' role='button' data-slide='prev')
+          span.carousel-control-prev-icon(aria-hidden='true')
+          span.sr-only Previous
+        a.carousel-control-next(href='#carousel' role='button' data-slide='next')
+          span.carousel-control-next-icon(aria-hidden='true')
+          span.sr-only Next
+      .scroll_icon
+        span
+        span
+        span
+    section#vision.v
+      .vision
+        h2 VISION
+        .vision_data
+          .video
+            iframe.iframe(src='https://www.youtube.com/embed/E1xkXZs0cAQ?controls=1')
+          .tag
+            #accordionExample.accordion
+              .card
+                #headingOne.card-header
+                  h2.mb-0
+                    button.btn.btn-block.text-left.collapsed(type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne') No one will Long without Roof
+                #collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#accordionExample')
+                  .card-body
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    | Ipsum perferendis autem corrupti dolorem, nobis sed
+                    | inventore eligendi optio voluptatibus quasi?
+              .card
+                #headingTwo.card-header
+                  h2.mb-0
+                    button.btn.btn-block.text-left.collapsed(type='button' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo') No one will Crave or Hunger
+                #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordionExample')
+                  .card-body
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    | Ipsum perferendis autem corrupti dolorem, nobis sed
+                    | inventore eligendi optio voluptatibus quasi?
+              .card
+                #headingThree.card-header
+                  h2.mb-0
+                    button.btn.btn-block.text-left.collapsed(type='button' data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree') No one will Yearn for Education
+                #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#accordionExample')
+                  .card-body
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    | Ipsum perferendis autem corrupti dolorem, nobis sed
+                    | inventore eligendi optio voluptatibus quasi?
+              .card
+                #headingFour.card-header
+                  h2.mb-0
+                    button.btn.btn-block.text-left.collapsed(type='button' data-toggle='collapse' data-target='#collapseFour' aria-expanded='false' aria-controls='collapseFour') No one will Face any Problems in Getting Treatment
+                #collapseFour.collapse(aria-labelledby='headingFour' data-parent='#accordionExample')
+                  .card-body
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    | Ipsum perferendis autem corrupti dolorem, nobis sed
+                    | inventore eligendi optio voluptatibus quasi?
+              .card
+                #headingFive.card-header
+                  h2.mb-0
+                    button.btn.btn-block.text-left.collapsed(type='button' data-toggle='collapse' data-target='#collapseFive' aria-expanded='false' aria-controls='collapseFive') No one will be without their Daily Necessaties
+                #collapseFive.collapse(aria-labelledby='headingFive' data-parent='#accordionExample')
+                  .card-body
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    | Ipsum perferendis autem corrupti dolorem, nobis sed
+                    | inventore eligendi optio voluptatibus quasi?
+              .card
+                #headingSix.card-header
+                  h2.mb-0
+                    button.btn.btn-block.text-left.collapsed(type='button' data-toggle='collapse' data-target='#collapseSix' aria-expanded='false' aria-controls='collapseSix') Encouraging People to Help the Needy
+                #collapseSix.collapse(aria-labelledby='headingSix' data-parent='#accordionExample')
+                  .card-body
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    | Ipsum perferendis autem corrupti dolorem, nobis sed
+                    | inventore eligendi optio voluptatibus quasi?
+        .join
+          a(href='#') JOIN THE MOVEMENT
+    section#discover.d
+      .discover
+        .point_block.row
+          .volunteer.discover_blocks.col-12.col-md-4
+            .block_logo
+              img.block_icon(src='./img/icon/volunteer.png' alt='#')
+            .block_title
+              h4 VOLUNTEER
+            .block_text
+              p
+                | Volunteer don’t get paid, not because they’re worthless, but
+                | because they’re priceless.
+          .give_needy.discover_blocks.col-12.col-md-4
+            .block_logo
+              img.block_icon(src='./img/icon/give-needy.png' alt='')
+            .block_title
+              h4 GIVE TO NEEDY
+            .block_text
+              p
+                | We don’t need to have deep pockets or be rich to help the needy,
+                | the poor and the hungry, we need to have a heart.
+          .donation.discover_blocks.col-12.col-md-4
+            .block_logo
+              img.block_icon(src='./img/icon/donation.png' alt='')
+            .block_title
+              h4 MAKE DONATION
+            .block_text
+              p
+                | God takes different forms in life to test your character. Your
+                | minimal selfless help will not only change your life but also
+                | yours.
+        .container.donate
+          h3 Give Children The Childhood They Deserve
+          a(href='/donate') DONATE
+    section#contact-us.cu
+      .contact-us
+        h2 CONTACT US
+        .contact-us_data
+          .contact-card
+            form(action='#')
+              input(type='text' placeholder='Enter Your Name')
+              input(type='email' placeholder='Enter Your E-mail')
+              textarea(cols='20' rows='5' placeholder='Your Message')
+              button.submit(type='submit') Submit
+          .contact-gif
+            img(src='./img/Contact-us-illustration.gif' alt='#')

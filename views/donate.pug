@@ -1,0 +1,19 @@
+extends base
+
+block content
+    main.second-donate
+      form.second-donate-form(action='#')
+        .form-group
+          label(for='full-name') Name*
+          input#full-name(type='text' name='full-name' placeholder='Enter Full Name' required='')
+        .form-group
+          label(for='email') Email*
+          input#email(type='text' name='email' placeholder='Enter Email address' required='')
+        .form-group
+          label(for='phone-number') Phone Number*
+          input#phone-number(type='tel' name='phone-number' placeholder='Enter Phone Number' required='')
+        .form-group
+          label(for='amount') Amount*
+          input#amount(type='number' name='amount' placeholder='Enter Amount (in inr)' min='1' required='')
+        .donate
+          button.btn.second-donate-btn(type='submit') Donate
