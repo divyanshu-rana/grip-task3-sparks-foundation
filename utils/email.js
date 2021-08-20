@@ -11,7 +11,7 @@ module.exports = class Email {
     this.description = data.description;
     this.date = data.date;
     this.mode = data.mode;
-    this.from = `Helping Hands Founation <${process.env.EMAIL_FROM}>`;
+    this.from = `Helping Hands Foundation <${process.env.EMAIL_FROM}>`;
   }
 
   newTransport() {

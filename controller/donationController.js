@@ -38,7 +38,7 @@ exports.donationConfirm = async (req, res) => {
         paymentDate.getFullYear()
       }`,
       mode: userData.data.method,
-      description: "Donation in Helping Hands Founation",
+      description: "Donation in Helping Hands Foundation",
     };
     const email = new Email(data);
     await email.sendReceipt();

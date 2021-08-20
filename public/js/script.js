@@ -27,7 +27,7 @@ if (donateForm) {
         key: "rzp_test_zpShqm4P2AqwbW", // Enter the Key ID generated from the Dashboard
         amount: `${parseFloat(amount) * 100}`, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
         currency: "INR",
-        name: "Helping Hands Founation",
+        name: "Helping Hands Foundation",
         description: "Donation",
         image: `${window.location.origin}/img/icon/logo.svg`,
         order_id: `${data.orderId}`, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
